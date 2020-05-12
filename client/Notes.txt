@@ -1,0 +1,42 @@
+Redux-Form has greate documentation for handling forms with a redux store
+Redux-Form has a built in reducer to handle these actions
+Field is a type of input and will require a property of "name"
+also it needs component to tell redux what to display on screen
+
+Redux Form handles all the connections to the store and what not
+our only job is connect the prop passed from the component to the value
+and to connect the onChange handle (of the DOM) to the component handler
+
+redux form also has a prop called handleSubmit to be called when the
+form is submitted
+
+Field is a component
+and it contains all these different methods and values
+when we make a field component at the StreamCreate component for example
+we can pass props down by calling them at the initializaiton
+
+
+JSON Server is for prototyping and mocking an actual backend server like
+express
+
+REST conventions is a standardized system for designing APIs
+
+Action -> method -> route
+
+If we follow REST-ful conventions we can create action creators 
+without having any components to show the responses
+
+the reducers for FETCH, EDIT & CREATE will all return 1 stream
+
+lodash is used for takign the hassle out of working with arrays numbers objects strings
+
+mapKeys function from lodash will take an array and make into objects
+
+_.mapKeys(streams, 'id)
+streams -> the name of the obj
+'id' the property inside the obj to assign to be the key of the new obj
+
+will return a new objects
+
+when using the combineReducer, the key value pair is essentially
+an element of a new global state object

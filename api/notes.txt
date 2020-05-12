@@ -1,0 +1,5 @@
+change scripts in package.json to
+"start": "json-server -p 3001 -w db.json"
+
+navigate to folder in terminal
+npm start
