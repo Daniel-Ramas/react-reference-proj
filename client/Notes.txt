@@ -40,3 +40,41 @@ will return a new objects
 
 when using the combineReducer, the key value pair is essentially
 an element of a new global state object
+
+we dont wanna navigate immediately back to localhost:3000 after the stream
+was created because if the api returns an error then the stream wont
+show
+
+only navigate after a successful api response
+
+implementing Programmatic navigation
+BrowserRouter creates its own history object
+need to make our own history to navigate
+
+import BrowserRouterHistory from 'history' (root level) **history.js
+import history from history
+
+at App.js pass history as prop on Router component
+at action creator (because action is called when clicking button)
+history.push('/path to whatever page u wanna go to')
+
+Each component in react router will need to fetch its own data
+which makes sense, you can't expect pages to rely on each other
+
+put=replace all
+patch=replace some
+
+USING PORTALS (Good for making sure the user does something in order to
+nav out of it)
+
+Create a modal using ReactDOM.createPortal
+pass a second argument of the div u want to attach to, NOT root
+make a new one
+
+Add link tags to DOM elements that will nav you to another page
+
+CONTEXT SYSTEM: Big Topic
+    Gets data from a parent component to ANY nested child component
+
+PROPS SYSTEM: Already been using this
+    Gets data from a parent component to a direct child component
